@@ -9,8 +9,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common TWRP stuff.           <!-- 关键修改行：从 Omni 改为 TWRP -->
+$(call inherit-product, vendor/twrp/config/common.mk)  <!-- 具体修改点 -->
 
 # Inherit from ums512_1h190 device
 $(call inherit-product, device/eebbk/ums512_1h190/device.mk)
